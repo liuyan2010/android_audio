@@ -45,6 +45,9 @@ public:
 
         return results;
     }
+    void printHelloWorld(){
+        cout << "hello world!" <<endl;
+    }
 };
 
 int main()
@@ -53,6 +56,7 @@ int main()
     int result;
 
     result = sol.nthUglgetNarcissisticNumbers(20);
+    sol.printHelloWorld();
     cout << "result" << result << endl;
     return 0;
 }
