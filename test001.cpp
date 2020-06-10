@@ -38,6 +38,7 @@ public:
                 saveNum /= 10;
             }
 
+            cout << "sum=" << num << ", powSum=" << powSum << endl;
             if (num == powSum)
                 results.push_back(num);
         }
@@ -45,3 +46,13 @@ public:
         return results;
     }
 };
+
+int main()
+{
+    Solution sol;
+    int result;
+
+    result = sol.nthUglgetNarcissisticNumbers(20);
+    cout << "result" << result << endl;
+    return 0;
+}
